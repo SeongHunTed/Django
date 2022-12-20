@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+
+{% extends 'base.html' %}
+
+{% block content %}
+<h1> Nice to meet you </h1>
+<a href="{% url 'articles:greeting' %}">인사말</a>
+<a href="{% url 'articles:dinner' %}">식사가시죠</a>
+<a href="{% url 'articles:throw' %}">throw</a>
+{% endblock content %}
+
+<a href="{% url 'pages:index' %}">pages->index 뒤로</a>
